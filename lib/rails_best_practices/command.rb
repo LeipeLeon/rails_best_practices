@@ -46,14 +46,17 @@ OptionParser.new do |opts|
 
   opts.on('--with-textmate', 'open file by textmate in html format') do
     options['with-textmate'] = true
+    options['format'] = 'html'
   end
 
   opts.on('--with-sublime', 'open file by sublime in html format') do
     options['with-sublime'] = true
+    options['format'] = 'html'
   end
 
   opts.on('--with-mvim', 'open file by mvim in html format') do
     options['with-mvim'] = true
+    options['format'] = 'html'
   end
 
   opts.on('--with-github GITHUB_NAME', 'open file on github in html format') do |github_name|
@@ -67,10 +70,12 @@ OptionParser.new do |opts|
 
   opts.on('--with-hg', 'display hg commit and username, only support html format') do
     options['with-hg'] = true
+    options['format'] = 'html'
   end
 
   opts.on('--with-git', 'display git commit and username, only support html format') do
     options['with-git'] = true
+    options['format'] = 'html'
   end
 
   opts.on('--template TEMPLATE', 'customize erb template') do |template|
