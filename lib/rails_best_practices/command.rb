@@ -11,6 +11,7 @@ require 'optparse'
 #        --with-textmate              open file by textmate in html format
 #        --with-sublime               open file by sublime in html format (requires subl-handler)
 #        --with-mvim                  open file by mvim in html format
+#        --with-atom                  open file by atom in html format (requires atom-open package)
 #        --with-github GITHUB_NAME    open file on github in html format, GITHUB_NAME is like railsbp/rails-bestpractices.com
 #        --with-git                   display git commit and username, only support html format
 #        --with-hg                    display hg commit and username, only support html format
@@ -54,6 +55,11 @@ OptionParser.new do |opts|
 
   opts.on('--with-mvim', 'open file by mvim in html format') do
     options['with-mvim'] = true
+  end
+
+  opts.on('--with-atom', 'open file by atom in html format (requires atom-open package)') do
+    options['with-atom'] = true
+    options['format'] = 'html'
   end
 
   opts.on('--with-github GITHUB_NAME', 'open file on github in html format') do |github_name|

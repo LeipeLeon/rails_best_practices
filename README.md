@@ -66,6 +66,7 @@ To see the full list of command-line options, run:
             --with-textmate              open file by textmate in html format
             --with-sublime               open file by sublime in html format (requires https://github.com/asuth/subl-handler)
             --with-mvim                  open file by mvim in html format
+            --with-atom                  open file by atom in html format (requires atom-open package)
             --with-github GITHUB_NAME    open file on github in html format. GITHUB_NAME is like railsbp/rails-bestpractices OR full URL to GitHub:FI repo
             --with-hg                    display hg commit and username, only support html format
             --with-git                   display git commit and username, only support html format
@@ -116,6 +117,10 @@ Install <https://github.com/asuth/subl-handler>
 #### TextMate 2
 
 If you use `TextMate 2`, you can install the [RailsBestPractices.tmbundle](https://github.com/jjuliano/RailsBestPractices.tmbundle) bundle.
+
+#### Atom
+
+Needs [atom-open](https://github.com/UziTech/atom-open) plugin and [#11399](https://github.com/atom/atom/pull/11399) to be available.
 
 ## Issues
 

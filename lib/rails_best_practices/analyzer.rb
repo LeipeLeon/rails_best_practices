@@ -239,6 +239,7 @@ module RailsBestPractices
           textmate: @options['with-textmate'],
           sublime: @options['with-sublime'],
           mvim: @options['with-mvim'],
+          atom: @options['with-atom'],
           github: @options['with-github'],
           github_name: @options['github-name'],
           last_commit_id: last_commit_id,
