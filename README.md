@@ -59,14 +59,16 @@ To see the full list of command-line options, run:
 
     $ rails_best_practices -h
 
-    Usage: rails_best_practices [options]
+    Usage: rails_best_practices [options] path
         -d, --debug                      Debug mode
-        -f, --format FORMAT              output format
+        -f, --format FORMAT              output format (text, html, yml, json, xml)
             --without-color              only output plain text without color
             --with-textmate              open file by textmate in html format
-            --with-sublime               open file by sublime in html format (requires https://github.com/asuth/subl-handler)
+            --with-sublime               open file by sublime in html format (requires subl-handler)
             --with-mvim                  open file by mvim in html format
-            --with-github GITHUB_NAME    open file on github in html format. GITHUB_NAME is like railsbp/rails-bestpractices OR full URL to GitHub:FI repo
+            --with-github GITHUB_NAME    open file on github in html format.
+                                         GITHUB_NAME is like railsbp/rails-bestpractices.com OR full URL to GitHub:FI repo
+            --last-commit-id COMMIT_ID   last commit id
             --with-hg                    display hg commit and username, only support html format
             --with-git                   display git commit and username, only support html format
             --template TEMPLATE          customize erb template
@@ -78,7 +80,7 @@ To see the full list of command-line options, run:
             --features                   include features files
         -x, --exclude PATTERNS           Don't analyze files matching a pattern
                                          (comma-separated regexp list)
-        -o, --only PATTERNS              analyze files only matching a pattern
+        -o, --only PATTERNS              Analyze files only matching a pattern
                                          (comma-separated regexp list)
         -g, --generate                   Generate configuration yaml
         -c, --config CONFIG_PATH         configuration file location (defaults to config/rails_best_practices.yml)
